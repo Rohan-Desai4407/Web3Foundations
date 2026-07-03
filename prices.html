@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Prices | Web3 Foundations</title>
+    <meta name="description" content="Live Crypto Prices Dashboard">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 22H22L12 2Z" fill="var(--primary)"/>
+        </svg>
+        Web3 Foundations
+      </a>
+      <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/concepts.html">Concepts</a>
+        <a href="/prices.html" class="active">Live Prices</a>
+        <a href="/simulator.html">Simulator</a>
+      </div>
+    </nav>
+
+    <main>
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <h2>Live Crypto Prices</h2>
+        <p style="color: var(--text-muted);">Real-time data fetched from CoinGecko.</p>
+        <button id="refreshBtn" class="btn" style="margin-top: 1rem;">Refresh Data</button>
+      </div>
+
+      <div class="price-dashboard" id="priceContainer">
+        <!-- Price cards will be injected here via JS -->
+        <p>Loading prices...</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Built with ❤️ by You | Arbitrum Builder Pods | <a href="https://github.com" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script type="module" src="/prices.js"></script>
+  </body>
+</html>
