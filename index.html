@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web3 Foundations | Arbitrum & L2</title>
-    <meta name="description" content="Introduction to Web3, Layer 2 scaling, and Arbitrum.">
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <nav>
-      <a href="/index.html" class="logo">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2L2 22H22L12 2Z" fill="var(--primary)"/>
-        </svg>
-        Web3 Foundations
-      </a>
-      <div class="nav-links">
-        <a href="/index.html" class="active">Home</a>
-        <a href="/concepts.html">Concepts</a>
-        <a href="/prices.html">Live Prices</a>
-        <a href="/simulator.html">Simulator</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web3 Foundations | Arbitrum & L2</title>
+  <meta name="description" content="Introduction to Web3, Layer 2 scaling, and Arbitrum.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="/index.html" class="logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 22H22L12 2Z" fill="var(--primary)" />
+      </svg>
+      Web3 Foundations
+    </a>
+    <div class="nav-links">
+      <a href="/index.html" class="active">Home</a>
+      <a href="/concepts.html">Concepts</a>
+      <a href="/prices.html">Live Prices</a>
+      <a href="/simulator.html">Simulator</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>Scaling Ethereum with Layer 2</h1>
+      <p>Discover how Arbitrum solves Ethereum's scalability challenges while inheriting its unmatched security. The
+        future of decentralized finance is fast, cheap, and secure.</p>
+    </section>
+
+    <section class="features-grid">
+      <div class="glass-card">
+        <div class="feature-icon">🐌</div>
+        <h2>Why Layer 2?</h2>
+        <p>Ethereum Mainnet (Layer 1) is incredibly secure and decentralized, but it can only process ~15 transactions
+          per second. This causes network congestion and exorbitant gas fees during peak times. Layer 2 solutions build
+          on top of Ethereum to handle computation off-chain.</p>
       </div>
-    </nav>
 
-    <main>
-      <section class="hero">
-        <h1>Scaling Ethereum with Layer 2</h1>
-        <p>Discover how Arbitrum solves Ethereum's scalability challenges while inheriting its unmatched security. The future of decentralized finance is fast, cheap, and secure.</p>
-      </section>
+      <div class="glass-card">
+        <div class="feature-icon">⚡</div>
+        <h2>What is Arbitrum?</h2>
+        <p>Arbitrum is an Optimistic Rollup. It executes transactions on its own cheaper network, bundles them together
+          (rolls them up), and posts the compressed data back to Ethereum Mainnet. This dramatically reduces the cost
+          per transaction while maintaining L1 security.</p>
+      </div>
 
-      <section class="features-grid">
-        <div class="glass-card">
-          <div class="feature-icon">🐌</div>
-          <h2>Why Layer 2?</h2>
-          <p>Ethereum Mainnet (Layer 1) is incredibly secure and decentralized, but it can only process ~15 transactions per second. This causes network congestion and exorbitant gas fees during peak times. Layer 2 solutions build on top of Ethereum to handle computation off-chain.</p>
-        </div>
+      <div class="glass-card">
+        <div class="feature-icon">💸</div>
+        <h2>Real-World Benefit</h2>
+        <p>Using Arbitrum over Mainnet means you can swap tokens, buy NFTs, or interact with DeFi protocols for pennies
+          instead of tens of dollars. It makes Web3 accessible to everyday users without compromising on the
+          decentralized ethos of Ethereum.</p>
+      </div>
+    </section>
+  </main>
 
-        <div class="glass-card">
-          <div class="feature-icon">⚡</div>
-          <h2>What is Arbitrum?</h2>
-          <p>Arbitrum is an Optimistic Rollup. It executes transactions on its own cheaper network, bundles them together (rolls them up), and posts the compressed data back to Ethereum Mainnet. This dramatically reduces the cost per transaction while maintaining L1 security.</p>
-        </div>
+  <footer>
+    <p>Built with ❤️ by Rohan Desai | Arbitrum Builder Pods | <a href="https://github.com" target="_blank">GitHub</a>
+    </p>
+  </footer>
 
-        <div class="glass-card">
-          <div class="feature-icon">💸</div>
-          <h2>Real-World Benefit</h2>
-          <p>Using Arbitrum over Mainnet means you can swap tokens, buy NFTs, or interact with DeFi protocols for pennies instead of tens of dollars. It makes Web3 accessible to everyday users without compromising on the decentralized ethos of Ethereum.</p>
-        </div>
-      </section>
-    </main>
+  <script type="module" src="/main.js"></script>
+</body>
 
-    <footer>
-      <p>Built with ❤️ by You | Arbitrum Builder Pods | <a href="https://github.com" target="_blank">GitHub</a></p>
-    </footer>
-
-    <script type="module" src="/main.js"></script>
-  </body>
 </html>
